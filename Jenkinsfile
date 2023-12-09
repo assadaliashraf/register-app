@@ -28,7 +28,7 @@ pipeline {
             }
         }
 
-        stage('Test Application') {
+        stage('SonarQube Analysis') {
             steps {
                 script {
                     withSonarQubeEnv(credentialsID: 'jenkins-sonarqube-token') {
