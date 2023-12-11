@@ -7,7 +7,7 @@ pipeline {
                 DOCKER_USER = "astivirgo"
                 DOCKER_PASS = 'System2020'
                 IMAGE_NAME = "${DOCKER_USER}" +  "/" + "${APP_NAME}"
-                IMAGE_TAG = "${RELEASE}" - "{BUILD_NUMBER}"
+                IMAGE_TAG = "${RELEASE}" + "{BUILD_NUMBER}"
              }
 
     stages {
