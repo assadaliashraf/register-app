@@ -5,7 +5,7 @@ pipeline {
                 APP_NAME = "register-app-pipeline"
                 RELEASE = "1.0.0"
                 DOCKER_USER = "astivirgo"
-                DOCKER_PASS = "System2020"
+                DOCKER_PASS = ''
                 IMAGE_NAME = "${DOCKER_USER}" +  "/" + "${APP_NAME}"
                 IMAGE_TAG = "${RELEASE}" + "{BUILD_NUMBER}"
              }
